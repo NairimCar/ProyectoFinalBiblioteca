@@ -1,10 +1,10 @@
 package com.Biblioteca.BibliotecaWS.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
+@Entity
+@Table(name="materialbibliografico", schema = "bd_biblioteca")
 public class MaterialBibliografico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
